@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden; /* means anything outside of the navbar div is clipped */
+  background-color: #74d5dd;
+  padding: 1em 0; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99; /* z-index determines how 'in or out' an element will be. The lower, the more to the back it will be, and vice versa. */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar-left{
+  padding-left: 20%;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Display some links to the right */
+#navbar-right { /* note that this floats the div, not the links in the navbar-right div. */
+  float: right;
+  padding-right: 20%;
+}
+
+
+/* main stylings */
+#main{
+  height: 500px;
+  margin-top: 80px;
+  background-image: linear-gradient(#74d5dd,#009fb7);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#main p{
+}
+
+#main img{
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
