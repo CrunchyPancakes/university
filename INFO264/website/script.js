@@ -11,7 +11,7 @@ function scrollFunction() {
     var y = x.getElementsByTagName("a"); // accesses the a tags within the navbar, and store them in an array
     var i; // for each a tag within the array, do something to it
     for(i = 0; i < y.length; i++){
-      y[i].style.color = "#009fb7";
+      y[i].style.color = "#74D5DD";
     }
   } else {
     document.getElementById("logo").style.fontSize = "30px";
@@ -24,4 +24,9 @@ function scrollFunction() {
       y[i].style.color = "#201d1e";
     }
   }
+}
+
+window.onload = function(){
+  var d = new Date();
+  document.getElementById("footerText").innerHTML = "&copy; Matthew Tansley "+d.getFullYear();
 }

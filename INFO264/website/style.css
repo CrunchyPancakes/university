@@ -2,10 +2,33 @@
 font-family: 'Roboto', sans-serif;
 */
 
+/* general stylings */
 body{
   margin: 0;
   padding: 0;
 }
+
+h1{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* content class stylings */
+.content{
+  margin-top: 5.5em;
+}
+
+.content h1{
+  padding: 0.75em;
+  text-align: center;
+}
+
 
 /* Create a sticky/fixed navbar */
 #navbar {
@@ -45,13 +68,13 @@ body{
 
 /* Links on mouse-over */
 #navbar a:hover {
-  background-color: #C1E0F7;
+  background-color: #9880CE;
   color: #201d1e;
 }
 
 /* Style the active/current link */
 #navbar a.active {
-  background-color: #54457F;
+  background-color: #7251BC;
   color: #201d1e;
 }
 
@@ -62,17 +85,15 @@ body{
 }
 
 
-/* main stylings */
+/* home page stylings */
 #main{
   height: 500px;
-  margin-top: 88px;
   background-image: linear-gradient(#009fb7,#74d5dd);
   padding-left: 20%;
   padding-right: 20%;
 }
 
 #main p{
-  font-family: 'Roboto', sans-serif;
   text-align: justify;
 }
 
@@ -81,4 +102,45 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+}
+
+#home-tech{
+  height: 500px;
+  background-color: #BFC1C2;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-top: solid #7660b2 0.625em;
+}
+
+#home-tech p{
+  text-align: center;
+}
+
+#tech-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#tech-grid img{
+  width: 50%;
+}
+
+
+/* footer stylings */
+#footer{
+  background-color: #272727;
+  overflow: hidden;
+  color: #74D5DD;
+  padding: 1em;
+}
+
+#footer-right{
+  float: right;
+}
+
+#footer-left{
+  float: left;
 }
