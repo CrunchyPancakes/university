@@ -30,6 +30,27 @@ p{
 }
 
 
+/* main class stylings */
+.main{
+  height: 500px;
+  background-image: linear-gradient(#009fb7,#74d5dd);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.main p{
+  text-align: center;
+}
+
+.main img{
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+
 /* Create a sticky/fixed navbar */
 #navbar {
   overflow: hidden; /* means anything outside of the navbar div is clipped */
@@ -86,31 +107,14 @@ p{
 
 
 /* home page stylings */
-#main{
-  height: 500px;
-  background-image: linear-gradient(#009fb7,#74d5dd);
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-#main p{
-  text-align: justify;
-}
-
-#main img{
-  height: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
 #home-tech{
   height: 500px;
-  background-color: #BFC1C2;
+  /*background-color: #BFC1C2;*/
+  background-image: linear-gradient(#7660b2,#9880CE);
   padding-left: 20%;
   padding-right: 20%;
-  border-top: solid #7660b2 0.625em;
+  /*border-top: solid #7660b2 0.625em;*/
+  border-top: solid #BFC1C2 0.625em;
 }
 
 #home-tech p{
@@ -128,6 +132,22 @@ p{
   width: 50%;
 }
 
+
+/* assignment page stylings */
+.assign-work{
+  height: 200px;
+  background-image: linear-gradient(#FAF8D4,#feffea);
+}
+
+.assign-indiv{
+  width: 150px;
+  height: 40px;
+  background-color: #7660b2;
+}
+
+#assign-view{
+  display: none;
+}
 
 /* footer stylings */
 #footer{

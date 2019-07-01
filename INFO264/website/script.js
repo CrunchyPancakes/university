@@ -26,6 +26,31 @@ function scrollFunction() {
   }
 }
 
+
+// function to change visibility of assignments
+function showAssignment(num){
+  document.getElementById("assign-view").style.display = "block";
+
+  var headElement = document.getElementById("assign-heads");
+  var assignmentHeads = headElement.getElementsByClassName("assign-indiv"); // stores the individual assignment headings in an array
+
+  var viewElement = document.getElementById("assign-view");
+  var assignmentView = viewElement.getElementsByClassName("assign-indiv"); // stores the individual assignment sections in an array
+
+  var i;
+  for(i = 0; i < assignmentHeads.length; i++){
+      var id = i + 1
+      if(num == id){
+        document.getElementById("assign-"+id).style.display ="block";
+      }
+      else{
+        document.getElementById("assign-"+id).style.display ="none";
+      }
+  }
+}
+
+
+// creates a line of text to display on the footer
 window.onload = function(){
   var d = new Date();
   document.getElementById("footerText").innerHTML = "&copy; Matthew Tansley "+d.getFullYear();

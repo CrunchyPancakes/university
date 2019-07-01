@@ -14,34 +14,32 @@
           <a href="index.html" id="logo">INFO264 - Business Analytics</a>
         </div><!-- navbar-left -->
         <div id="navbar-right">
-          <a href="index.html" class="active">Home</a>
-          <a href="assignments.html">Assignments</a>
+          <a href="index.html">Home</a>
+          <a href="assignments.html" class="active">Assignments</a>
           <a href="#">Project</a>
         </div><!-- navbar-right -->
     </div><!-- navbar -->
 
     <div class="content">
       <div class="main">
-        <h1>Welcome</h1>
-        <p>Welcome to my INFO264 website. The purpose of this website is twofold; to keep track of and ultimately present my work on the course, and to practice my web development skills.</p>
-        <img src="images/analytics.png" alt="analytics">
+        <p>Click on an assignment heading to view more information on it.</p>
+        <div id="assign-heads">
+          <div class="assign-indiv" onclick="showAssignment(1)"><h2>Assignment 1</h2></div>
+          <div class="assign-indiv" onclick="showAssignment(2)"><h2>Assignment 2</h2></div>
+          <div class="assign-indiv" onclick="showAssignment(3)"><h2>Assignment 3</h2></div>
+        </div>
       </div><!-- main -->
-
-      <div id="home-tech">
-        <h1>Web Technologies</h1>
-        <p>This website is built using:</p>
-        <div id="tech-grid">
-          <div class="tech-grid-item">
-            <img src="images/html.png" alt="html">
-          </div>
-          <div class="tech-grid-item">
-            <img src="images/css.png" alt="css">
-          </div>
-          <div class="tech-grid-item">
-            <img src="images/js.png" alt="js">
-          </div>
-        </div><!-- tech-grid -->
-      </div><!-- home-tech -->
+      <div id="assign-view">
+        <div class="assign-work" id="assign-1">
+          <h1>My work on Assignment 1</h1>
+        </div>
+        <div class="assign-work" id="assign-2">
+          <h1>My work on Assignment 2</h1>
+        </div>
+        <div class="assign-work" id="assign-3">
+          <h1>My work on assignment 3</h1>
+        </div>
+      </div><!-- assign-view -->
     </div><!-- content -->
 
     <div id="footer">
