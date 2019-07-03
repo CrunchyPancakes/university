@@ -4,6 +4,7 @@
     <title>INFO264 - Business Analytics - Matthew Tansley</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   </head>
 
@@ -24,9 +25,9 @@
       <div class="main">
         <p>Click on an assignment heading to view more information on it.</p>
         <div id="assign-heads">
-          <div class="assign-indiv" onclick="showAssignment(1)"><h2>Assignment 1</h2></div>
-          <div class="assign-indiv" onclick="showAssignment(2)"><h2>Assignment 2</h2></div>
-          <div class="assign-indiv" onclick="showAssignment(3)"><h2>Assignment 3</h2></div>
+          <div class="assign-heading" onClick="showAssignment(1)"><h2>Assignment 1</h2></div>
+          <div class="assign-heading" onClick="showAssignment(2)"><h2>Assignment 2</h2></div>
+          <div class="assign-heading" onClick="showAssignment(3)"><h2>Assignment 3</h2></div>
         </div>
       </div><!-- main -->
       <div id="assign-view">
@@ -51,6 +52,10 @@
         <p id="footerText">g</p>
       </div>
     </div><!-- footer -->
+
+    <button id="1" onClick="reply_click(this.id)">B1</button>
+    <button id="2" onClick="reply_click(this.id)">B2</button>
+    <button id="3" onClick="reply_click(this.id)">B3</button>
 
   </body>
 </html>

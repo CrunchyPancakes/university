@@ -32,13 +32,10 @@ function showAssignment(num){
   document.getElementById("assign-view").style.display = "block";
 
   var headElement = document.getElementById("assign-heads");
-  var assignmentHeads = headElement.getElementsByClassName("assign-indiv"); // stores the individual assignment headings in an array
-
-  var viewElement = document.getElementById("assign-view");
-  var assignmentView = viewElement.getElementsByClassName("assign-indiv"); // stores the individual assignment sections in an array
+  var headings = headElement.getElementsByClassName("assign-heading"); // stores the individual assignment headings in an array
 
   var i;
-  for(i = 0; i < assignmentHeads.length; i++){
+  for(i = 0; i < headings.length; i++){
       var id = i + 1
       if(num == id){
         document.getElementById("assign-"+id).style.display ="block";
