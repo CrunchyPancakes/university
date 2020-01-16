@@ -1,0 +1,204 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+/* Properties */
+:root {
+  --overlay-green: rgba(68, 159, 55, 0.75);
+  --main-green: #64a659;
+  --light: #ddd;
+  --dark: #444;
+  --text-color: #434343;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Header Stylings */
+header {
+  background: url("../images/info-sys-banner.png");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+}
+
+header .header-text {
+  background: var(--overlay-green);
+  width: 60%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+header h2 {
+  margin: 0;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+}
+
+/* Nav Stylings */
+nav {
+  display: grid;
+  grid-gap: 1.25rem;
+  padding: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--light);
+}
+
+nav a {
+  background: #fff;
+  text-decoration: none;
+  padding: 1.2rem;
+  text-align: center;
+  color: var(--main-green);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+nav a:hover {
+  background: var(--main-green);
+  color: #fff;
+  transition: ease-in 0.5s;
+}
+
+/* Overview Page Stylings */
+#overview-wrapper {
+  text-align: justify;
+  padding: 1rem 4rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "top-box top-box top-box top-box top-box top-box"
+    "box-a box-a box-b box-b box-c box-c"
+    ". bottom-box bottom-box bottom-box bottom-box .";
+}
+
+#overview-wrapper h1 {
+  color: var(--main-green);
+  text-align: center;
+}
+
+#overview-wrapper h1,
+#overview-wrapper h2 {
+  font-size: 1.5rem;
+}
+
+#overview-wrapper h3 {
+  font-size: 1.3rem;
+}
+
+#overview-wrapper h4,
+#overview-wrapper p {
+  font-size: 1rem;
+}
+
+#overview-wrapper h1,
+#overview-wrapper h2,
+#overview-wrapper h3 {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+#overview-wrapper p {
+  text-align: justify;
+}
+
+#overview-wrapper .box {
+  padding: 0.75rem;
+}
+
+#overview-wrapper .top-box {
+  grid-area: top-box;
+}
+
+#overview-wrapper .box-a {
+  grid-area: box-a;
+}
+
+#overview-wrapper .box-b {
+  grid-area: box-b;
+  border-left: solid var(--light) 1px;
+  border-right: solid var(--light) 1px;
+}
+
+#overview-wrapper .box-c {
+  grid-area: box-c;
+}
+
+#overview-wrapper .bottom-box {
+  grid-area: bottom-box;
+  background: var(--light);
+  box-shadow: var(--shadow);
+}
+
+/* Footer Stylings */
+footer {
+  background: var(--dark);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 15%;
+  float: right;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Header Stylings */
+  header {
+    padding: 0;
+  }
+
+  header .header-text {
+    width: 60%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  header .header-text h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  header .header-text h2 {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* Nav Stylings */
+  nav {
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
