@@ -20,6 +20,10 @@ body {
   line-height: 1.5;
 }
 
+.box {
+  padding: 0.75rem;
+}
+
 /* Header Stylings */
 header {
   background: url("../images/info-sys-banner.png");
@@ -124,10 +128,6 @@ nav a:hover {
   text-align: justify;
 }
 
-#overview-wrapper .box {
-  padding: 0.75rem;
-}
-
 #overview-wrapper .top-box {
   grid-area: top-box;
 }
@@ -150,6 +150,36 @@ nav a:hover {
   grid-area: bottom-box;
   background: var(--light);
   box-shadow: var(--shadow);
+}
+
+/* Testimonial Stylings */
+#testimonials h1 {
+  text-align: center;
+  color: var(--main-green);
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+.testimonial {
+  background: var(--light);
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: var(--shadow);
+}
+
+.photo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
 }
 
 /* Footer Stylings */
@@ -221,6 +251,22 @@ footer p {
     border-top: solid var(--light) 1px;
   }
 
+  /* Testimonial Stylings */
+  .testimonial {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "photo"
+      "test-text";
+  }
+
+  .testimonial .photo {
+    grid-area: photo;
+  }
+
+  .testimonial div {
+    grid-area: test-text;
+  }
+
   footer {
     padding: 0.5rem 2rem;
   }
@@ -272,6 +318,25 @@ footer p {
   #overview-wrapper h2,
   #overview-wrapper h3 {
     font-size: 1.2em;
+  }
+
+  /* Testimonial Stylings */
+  .testimonial {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .testimonial .photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .testimonial .photo img {
+    height: 100%;
+  }
+
+  .testimonial h2 {
+    text-align: center;
   }
 
   footer {
